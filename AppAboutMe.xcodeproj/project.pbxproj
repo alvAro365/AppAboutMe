@@ -7,25 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242AAD0C200BA57F007DEBB3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */; };
 		2474518A200A8CE9007BFEC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24745189200A8CE9007BFEC1 /* AppDelegate.m */; };
 		2474518D200A8CE9007BFEC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474518C200A8CE9007BFEC1 /* ViewController.m */; };
 		24745190200A8CE9007BFEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2474518E200A8CE9007BFEC1 /* Main.storyboard */; };
-		24745192200A8CE9007BFEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24745191200A8CE9007BFEC1 /* Assets.xcassets */; };
 		24745195200A8CE9007BFEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24745193200A8CE9007BFEC1 /* LaunchScreen.storyboard */; };
 		24745198200A8CE9007BFEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24745197200A8CE9007BFEC1 /* main.m */; };
+		2474519F200A8D44007BFEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2474519E200A8D44007BFEC1 /* Assets.xcassets */; };
+		247451A2200B57B3007BFEC1 /* MyInterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247451A1200B57B3007BFEC1 /* MyInterestsViewController.m */; };
+		248FEEC1200CC7B400126867 /* HiLowGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FEEC0200CC7B400126867 /* HiLowGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242AAD0A200BA57F007DEBB3 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		24745185200A8CE9007BFEC1 /* AppAboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24745188200A8CE9007BFEC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24745189200A8CE9007BFEC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2474518B200A8CE9007BFEC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2474518C200A8CE9007BFEC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2474518F200A8CE9007BFEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		24745191200A8CE9007BFEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24745194200A8CE9007BFEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24745196200A8CE9007BFEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24745197200A8CE9007BFEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2474519E200A8D44007BFEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		247451A0200B57B3007BFEC1 /* MyInterestsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInterestsViewController.h; sourceTree = "<group>"; };
+		247451A1200B57B3007BFEC1 /* MyInterestsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInterestsViewController.m; sourceTree = "<group>"; };
+		248FEEBF200CC7B400126867 /* HiLowGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiLowGameViewController.h; sourceTree = "<group>"; };
+		248FEEC0200CC7B400126867 /* HiLowGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiLowGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +72,16 @@
 				2474518B200A8CE9007BFEC1 /* ViewController.h */,
 				2474518C200A8CE9007BFEC1 /* ViewController.m */,
 				2474518E200A8CE9007BFEC1 /* Main.storyboard */,
-				24745191200A8CE9007BFEC1 /* Assets.xcassets */,
+				2474519E200A8D44007BFEC1 /* Assets.xcassets */,
 				24745193200A8CE9007BFEC1 /* LaunchScreen.storyboard */,
 				24745196200A8CE9007BFEC1 /* Info.plist */,
 				24745197200A8CE9007BFEC1 /* main.m */,
+				247451A0200B57B3007BFEC1 /* MyInterestsViewController.h */,
+				247451A1200B57B3007BFEC1 /* MyInterestsViewController.m */,
+				242AAD0A200BA57F007DEBB3 /* SettingsViewController.h */,
+				242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */,
+				248FEEBF200CC7B400126867 /* HiLowGameViewController.h */,
+				248FEEC0200CC7B400126867 /* HiLowGameViewController.m */,
 			);
 			path = AppAboutMe;
 			sourceTree = "<group>";
@@ -130,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24745195200A8CE9007BFEC1 /* LaunchScreen.storyboard in Resources */,
-				24745192200A8CE9007BFEC1 /* Assets.xcassets in Resources */,
+				2474519F200A8D44007BFEC1 /* Assets.xcassets in Resources */,
 				24745190200A8CE9007BFEC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247451A2200B57B3007BFEC1 /* MyInterestsViewController.m in Sources */,
 				2474518D200A8CE9007BFEC1 /* ViewController.m in Sources */,
+				248FEEC1200CC7B400126867 /* HiLowGameViewController.m in Sources */,
+				242AAD0C200BA57F007DEBB3 /* SettingsViewController.m in Sources */,
 				24745198200A8CE9007BFEC1 /* main.m in Sources */,
 				2474518A200A8CE9007BFEC1 /* AppDelegate.m in Sources */,
 			);
