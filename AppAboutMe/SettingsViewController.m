@@ -14,17 +14,17 @@
 @end
 
 @implementation SettingsViewController
-static UIColor* defaultBackground = nil;
+static UIColor* userBackground = nil;
 
 - (void)viewDidLoad {
     
     // Do any additional setup after loading the view.
     [super viewDidLoad];
     
-    if(defaultBackground!=nil) {
+    if(userBackground!=nil) {
         
-        [self setSwitchOn:defaultBackground];
-        self.view.backgroundColor = defaultBackground;
+        [self setSwitchOn:userBackground];
+        self.view.backgroundColor = userBackground;
     }else {
         
         [self.blackSwitch setOn:YES animated:YES];
@@ -37,21 +37,21 @@ static UIColor* defaultBackground = nil;
 }
 
 -(BOOL) isSwitchOn {
-    BOOL areSwitchesON = NO;
+    BOOL switchOn = NO;
     
     if (self.redSwitch.on || self.blueSwitch.on || self.greenSwitch.on || self.blackSwitch.on) {
-        areSwitchesON = YES;
+        switchOn = YES;
     }
     
-    return areSwitchesON;
+    return switchOn;
 }
 
 
 - (IBAction)switchChanged:(UISwitch*)sender {
     
     if(![self isSwitchOn]) {
-        defaultBackground = [UIColor blackColor];
-        self.view.backgroundColor = defaultBackground;
+        userBackground = [UIColor blackColor];
+        self.view.backgroundColor = userBackground;
         [self.blackSwitch setOn:YES animated:YES];
     }
     [self checkSwitches:sender];
@@ -79,7 +79,7 @@ static UIColor* defaultBackground = nil;
 
 +(UIColor*) userBackground {
 
-    return defaultBackground;
+    return userBackground;
     
 }
 
@@ -91,8 +91,8 @@ static UIColor* defaultBackground = nil;
         [self.blackSwitch setOn:NO animated:NO];
         [self.redSwitch setOn:NO animated:NO];
         
-        defaultBackground = [UIColor greenColor];
-        self.view.backgroundColor = defaultBackground;
+        userBackground = [UIColor greenColor];
+        self.view.backgroundColor = userBackground;
         
     } else if (selectedSwitch == self.blueSwitch && self.blueSwitch.on) {
         
@@ -100,27 +100,27 @@ static UIColor* defaultBackground = nil;
         [self.blackSwitch setOn:NO animated:NO];
         [self.redSwitch setOn:NO animated:NO];
         
-        defaultBackground = [UIColor blueColor];
-        self.view.backgroundColor = defaultBackground;
+        userBackground = [UIColor blueColor];
+        self.view.backgroundColor = userBackground;
     } else if (selectedSwitch == self.redSwitch && self.redSwitch.on) {
         
         [self.greenSwitch setOn:NO animated:NO];
         [self.blackSwitch setOn:NO animated:NO];
         [self.blueSwitch setOn:NO animated:NO];
         
-        defaultBackground = [UIColor redColor];
-        self.view.backgroundColor = defaultBackground;
+        userBackground = [UIColor redColor];
+        self.view.backgroundColor = userBackground;
     } else if (selectedSwitch == self.blackSwitch && self.blackSwitch.on) {
         
         [self.greenSwitch setOn:NO animated:NO];
         [self.blueSwitch setOn:NO animated:NO];
         [self.redSwitch setOn:NO animated:NO];
-        defaultBackground = [UIColor blackColor];
-        self.view.backgroundColor = defaultBackground;
+        userBackground = [UIColor blackColor];
+        self.view.backgroundColor = userBackground;
     }
     
     
-    return defaultBackground;
+    return userBackground;
 }
 
 
