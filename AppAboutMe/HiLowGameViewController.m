@@ -18,6 +18,7 @@
 @property (nonatomic) int rightAnswer;
 @property (weak, nonatomic) IBOutlet UILabel *answer;
 @property (weak, nonatomic) IBOutlet UILabel *correctAnswar;
+@property (nonatomic) UIColor* background;
 
 @property (nonatomic) NSString* resultText;
 
@@ -37,7 +38,12 @@
 - (void)refresh {
     [self setShowNumber];
     [self showRandomNumber];
-    self.showResult.text = _resultText;
+    
+    if(_resultText == nil) {
+        self.showResult.text = @"Guess a number between 0 and 100!";
+    } else{
+        self.showResult.text = _resultText;
+    }
 
     
 }
@@ -72,9 +78,6 @@
     _value = (int)_guessNumber.value;
     [self checkGuess:_value];
     
-    
-    
-    
 }
 
 - (void) checkGuess:(int) guess {
@@ -84,18 +87,22 @@
         _resultText = _correctAnswer;
         [self randomNumber];
         [self result];
-    } else {
-        NSString*_wrongAnswer = @"Guess again!";
+    } else if (guess > _rightAnswer) {
+        NSString*_wrongAnswer = @"Too high:( Guess again!";
         _resultText= _wrongAnswer;
         [self result];
 
+    } else if (guess < _rightAnswer) {
+        NSString*_wrongAnswer = @"Too low:( Guess again!";
+        _resultText= _wrongAnswer;
+        [self result];
     }
 
     
 }
 
 -(void) result {
-    
+
     _showResult.text = _resultText;
     [self refresh];
     

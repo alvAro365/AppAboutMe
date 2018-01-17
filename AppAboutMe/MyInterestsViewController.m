@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *interestImage;
 @property (weak, nonatomic) IBOutlet UILabel *interestText;
 @property (nonatomic) int value;
+@property (nonatomic) UIColor* background;
 
 @end
 
@@ -36,6 +37,7 @@
     
     
 }
+
 
 - (void)setImage:(int) imageNr {
     

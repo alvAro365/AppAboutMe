@@ -7,15 +7,40 @@
 //
 
 #import "ViewController.h"
+#import "SettingsViewController.h"
+
+
 
 @interface ViewController ()
+@property (nonatomic) UIColor* background;
 
 @end
 
 @implementation ViewController
 
+
+
+- (IBAction)unWindToMainPage:(UIStoryboardSegue *)segue {
+    
+    SettingsViewController *source = [segue sourceViewController];
+    SettingsViewController *settings = [[SettingsViewController alloc] init];
+    if(!settings.redSwitch.on) {
+        self.view.backgroundColor = [UIColor redColor];
+        
+    }
+    
+    
+    self.view.backgroundColor= [SettingsViewController userBackground];
+    
+}
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +49,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

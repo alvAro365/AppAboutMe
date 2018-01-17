@@ -13,7 +13,7 @@
         <!--Alvar Aronija-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                         <barButtonItem key="leftBarButtonItem" image="icons8-settings-filled-50" id="MDd-p5-TFv">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="sh9-7K-x5c" kind="show" id="kPE-eG-wPk"/>
+                                <segue destination="sh9-7K-x5c" kind="show" id="PXg-Ev-d6Z"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="A6F-gS-M9j">
@@ -69,10 +69,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="appDeveloping" destination="8bC-Xf-vdC" id="LN2-qu-La5"/>
-                        <outlet property="mainView" destination="8bC-Xf-vdC" id="UwE-MI-1Of"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +118,7 @@
         <!--App developing-->
         <scene sceneID="UGe-zU-g53">
             <objects>
-                <viewController title="App developing" id="gwO-El-B8B" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController title="App developing" id="gwO-El-B8B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fr9-YU-cJd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbS-z4-IT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.8" y="885.60719640179911"/>
+            <point key="canvasLocation" x="1313" y="825"/>
         </scene>
         <!--Settings-->
         <scene sceneID="uUQ-iQ-Wma">
@@ -188,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="setColor:" destination="sh9-7K-x5c" eventType="valueChanged" id="A2d-xo-1or"/>
+                                    <action selector="switchChanged:" destination="sh9-7K-x5c" eventType="valueChanged" id="iZN-Ij-8OC"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8z9-78-SbV">
@@ -196,8 +192,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="blueBackground:" destination="d0x-qT-owv" eventType="valueChanged" id="a5N-qr-895"/>
-                                    <action selector="setColor:" destination="sh9-7K-x5c" eventType="valueChanged" id="gJf-0z-py8"/>
+                                    <action selector="switchChanged:" destination="sh9-7K-x5c" eventType="valueChanged" id="8pt-Lc-ALK"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7o5-tK-0n0">
@@ -205,23 +200,48 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="setColor:" destination="sh9-7K-x5c" eventType="valueChanged" id="Hzi-xD-O01"/>
+                                    <action selector="switchChanged:" destination="sh9-7K-x5c" eventType="valueChanged" id="mpd-Ra-tP6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Black" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-PB-Xm1">
+                                <rect key="frame" x="62" y="345" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-ar-Vno">
+                                <rect key="frame" x="265" y="340" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="sh9-7K-x5c" eventType="valueChanged" id="txk-09-G9A"/>
                                 </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="2Ez-Nj-Z7Y"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Settings" id="HFK-rd-5Sa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jJC-e6-pNF">
+                            <connections>
+                                <segue destination="luF-ms-4Kl" kind="unwind" unwindAction="unWindToMainPage:" id="OXO-Em-DCh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="blueBackground" destination="8z9-78-SbV" id="L1X-1I-8tW"/>
-                        <outlet property="greenBackground" destination="lz0-HU-6W8" id="UI9-4p-YmC"/>
-                        <outlet property="redBackground" destination="7o5-tK-0n0" id="TkL-XV-9Pi"/>
+                        <outlet property="blackSwitch" destination="RfF-ar-Vno" id="ae0-ab-Sji"/>
+                        <outlet property="blueSwitch" destination="8z9-78-SbV" id="a1e-7M-6Is"/>
+                        <outlet property="greenSwitch" destination="lz0-HU-6W8" id="wHZ-4l-UKO"/>
+                        <outlet property="redSwitch" destination="7o5-tK-0n0" id="DEA-5c-9eD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMK-x9-jdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="d0x-qT-owv" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="luF-ms-4Kl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1312.8" y="1574.6626686656673"/>
+            <point key="canvasLocation" x="1278" y="1540"/>
         </scene>
         <!--Hi-Low-->
         <scene sceneID="0AI-lh-hT0">

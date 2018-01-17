@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SettingsViewController : UIViewController
 
+
++(UIColor*) userBackground;
+
+@property (weak, nonatomic) IBOutlet UISwitch *blueSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *greenSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *redSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *blackSwitch;
 
 
 @end
