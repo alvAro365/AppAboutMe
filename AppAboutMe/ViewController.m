@@ -12,7 +12,6 @@
 
 
 @interface ViewController ()
-@property (nonatomic) UIColor* background;
 
 @end
 
@@ -21,14 +20,6 @@
 
 
 - (IBAction)unWindToMainPage:(UIStoryboardSegue *)segue {
-    
-    SettingsViewController *source = [segue sourceViewController];
-    SettingsViewController *settings = [[SettingsViewController alloc] init];
-    if(!settings.redSwitch.on) {
-        self.view.backgroundColor = [UIColor redColor];
-        
-    }
-    
     
     self.view.backgroundColor= [SettingsViewController userBackground];
     

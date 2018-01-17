@@ -7,6 +7,7 @@
 //
 
 #import "MyInterestsViewController.h"
+#import "SettingsViewController.h"
 
 @interface MyInterestsViewController ()
 @property (weak, nonatomic) IBOutlet UISlider *imageSelector;
@@ -22,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor= [SettingsViewController userBackground];
     [self refresh];
 }
 

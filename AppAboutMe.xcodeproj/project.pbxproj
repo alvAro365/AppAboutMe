@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		242AAD0C200BA57F007DEBB3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */; };
+		242EE59B200FB18C00F61C7B /* ThisIsMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EE59A200FB18C00F61C7B /* ThisIsMeViewController.m */; };
+		242EE59E200FB1ED00F61C7B /* WhyAppDevViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EE59D200FB1ED00F61C7B /* WhyAppDevViewController.m */; };
 		2474518A200A8CE9007BFEC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24745189200A8CE9007BFEC1 /* AppDelegate.m */; };
 		2474518D200A8CE9007BFEC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474518C200A8CE9007BFEC1 /* ViewController.m */; };
 		24745190200A8CE9007BFEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2474518E200A8CE9007BFEC1 /* Main.storyboard */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		242AAD0A200BA57F007DEBB3 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		242EE599200FB18C00F61C7B /* ThisIsMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThisIsMeViewController.h; sourceTree = "<group>"; };
+		242EE59A200FB18C00F61C7B /* ThisIsMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThisIsMeViewController.m; sourceTree = "<group>"; };
+		242EE59C200FB1ED00F61C7B /* WhyAppDevViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhyAppDevViewController.h; sourceTree = "<group>"; };
+		242EE59D200FB1ED00F61C7B /* WhyAppDevViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhyAppDevViewController.m; sourceTree = "<group>"; };
 		24745185200A8CE9007BFEC1 /* AppAboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24745188200A8CE9007BFEC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24745189200A8CE9007BFEC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 				2474518B200A8CE9007BFEC1 /* ViewController.h */,
 				2474518C200A8CE9007BFEC1 /* ViewController.m */,
 				2474518E200A8CE9007BFEC1 /* Main.storyboard */,
+				242EE59C200FB1ED00F61C7B /* WhyAppDevViewController.h */,
+				242EE59D200FB1ED00F61C7B /* WhyAppDevViewController.m */,
 				2474519E200A8D44007BFEC1 /* Assets.xcassets */,
 				24745193200A8CE9007BFEC1 /* LaunchScreen.storyboard */,
 				24745196200A8CE9007BFEC1 /* Info.plist */,
@@ -81,6 +89,8 @@
 				242AAD0A200BA57F007DEBB3 /* SettingsViewController.h */,
 				242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */,
 				248FEEBF200CC7B400126867 /* HiLowGameViewController.h */,
+				242EE599200FB18C00F61C7B /* ThisIsMeViewController.h */,
+				242EE59A200FB18C00F61C7B /* ThisIsMeViewController.m */,
 				248FEEC0200CC7B400126867 /* HiLowGameViewController.m */,
 			);
 			path = AppAboutMe;
@@ -160,6 +170,8 @@
 				247451A2200B57B3007BFEC1 /* MyInterestsViewController.m in Sources */,
 				2474518D200A8CE9007BFEC1 /* ViewController.m in Sources */,
 				248FEEC1200CC7B400126867 /* HiLowGameViewController.m in Sources */,
+				242EE59E200FB1ED00F61C7B /* WhyAppDevViewController.m in Sources */,
+				242EE59B200FB18C00F61C7B /* ThisIsMeViewController.m in Sources */,
 				242AAD0C200BA57F007DEBB3 /* SettingsViewController.m in Sources */,
 				24745198200A8CE9007BFEC1 /* main.m in Sources */,
 				2474518A200A8CE9007BFEC1 /* AppDelegate.m in Sources */,

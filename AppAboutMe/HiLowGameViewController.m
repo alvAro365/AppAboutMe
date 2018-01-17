@@ -7,6 +7,7 @@
 //
 
 #import "HiLowGameViewController.h"
+#import "SettingsViewController.h"
 
 @interface HiLowGameViewController ()
 
@@ -30,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor= [SettingsViewController userBackground];
     [self randomNumber];
     [self refresh];
     

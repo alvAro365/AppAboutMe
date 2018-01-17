@@ -118,7 +118,7 @@
         <!--App developing-->
         <scene sceneID="UGe-zU-g53">
             <objects>
-                <viewController title="App developing" id="gwO-El-B8B" sceneMemberID="viewController">
+                <viewController title="App developing" id="gwO-El-B8B" customClass="WhyAppDevViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fr9-YU-cJd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@
         <!--This is me-->
         <scene sceneID="Bmi-dj-e00">
             <objects>
-                <viewController title="This is me" id="qsV-21-IJU" sceneMemberID="viewController">
+                <viewController title="This is me" id="qsV-21-IJU" customClass="ThisIsMeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ubt-sb-Oco">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
