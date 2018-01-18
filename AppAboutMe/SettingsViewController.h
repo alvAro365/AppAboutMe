@@ -12,12 +12,10 @@
 @interface SettingsViewController : UIViewController
 
 
-+(UIColor*) userBackground;
++(UIColor*) defaultBackgroundColor;
++(UIColor*) globalBackgroundColor;
++(void) setGlobalBackground:(UIColor*) color;
 
-@property (weak, nonatomic) IBOutlet UISwitch *blueSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *greenSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *redSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *blackSwitch;
 
 
 @end

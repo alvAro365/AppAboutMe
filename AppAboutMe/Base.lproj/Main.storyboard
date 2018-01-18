@@ -224,6 +224,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="HFK-rd-5Sa">
+                        <barButtonItem key="leftBarButtonItem" title="Alvar Aronija" id="cMu-CL-1ho">
+                            <connections>
+                                <segue destination="luF-ms-4Kl" kind="unwind" unwindAction="unWindBack:" id="r4x-37-xY7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="jJC-e6-pNF">
                             <connections>
                                 <segue destination="luF-ms-4Kl" kind="unwind" unwindAction="unWindToMainPage:" id="OXO-Em-DCh"/>
@@ -241,7 +246,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMK-x9-jdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="luF-ms-4Kl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="1540"/>
+            <point key="canvasLocation" x="1313" y="1540"/>
         </scene>
         <!--Hi-Low-->
         <scene sceneID="0AI-lh-hT0">
@@ -287,13 +292,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFS-i5-rdl">
-                                <rect key="frame" x="28" y="581" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVP-Gs-2rg">
                                 <rect key="frame" x="13" y="120" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -306,7 +304,6 @@
                         <viewLayoutGuide key="safeArea" id="efB-S9-t64"/>
                     </view>
                     <connections>
-                        <outlet property="answer" destination="LFS-i5-rdl" id="0nF-pY-D7i"/>
                         <outlet property="correctAnswar" destination="qVP-Gs-2rg" id="oQ3-hs-i8t"/>
                         <outlet property="guessButton" destination="CyB-3u-apQ" id="EKF-Ac-EiZ"/>
                         <outlet property="guessNumber" destination="FH7-p2-Zyg" id="Mlu-b7-s4M"/>
@@ -342,15 +339,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="estonia" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-fR-lRz">
+                                <rect key="frame" x="74" y="110" width="74" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Norway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="up9-ok-hyg">
-                                <rect key="frame" x="156" y="257" width="62" height="21"/>
+                                <rect key="frame" x="157" y="268" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-xj-1sD">
-                                <rect key="frame" x="67" y="297" width="240" height="100"/>
+                                <rect key="frame" x="67" y="308" width="240" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">I have worked and lived in different places in West and South of Norway. In 2011 I met the love of my life, Pernilla! 2014 moved we to Gothenburg in Sweden.</string>
@@ -358,19 +359,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="estonia" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-fR-lRz">
-                                <rect key="frame" x="74" y="110" width="74" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sweden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-y4-LKy">
-                                <rect key="frame" x="156" y="416" width="62" height="21"/>
+                                <rect key="frame" x="157" y="427" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="I live in Balltorp toghether with my girlfriend Pernilla and our son Noah. We are expecting our second child in this summer." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-sq-4So">
-                                <rect key="frame" x="67" y="456" width="240" height="100"/>
+                                <rect key="frame" x="67" y="467" width="240" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -378,11 +375,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sweden" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-9A-iCn">
-                                <rect key="frame" x="74" y="405" width="74" height="43"/>
+                                <rect key="frame" x="75" y="416" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="norway" translatesAutoresizingMaskIntoConstraints="NO" id="o7V-j6-Mah">
-                                <rect key="frame" x="74" y="246" width="74" height="43"/>
+                                <rect key="frame" x="75" y="257" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

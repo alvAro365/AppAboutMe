@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor= [SettingsViewController userBackground];
+    self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
     self.myInterestsData = @{@0: @{@"title": @"Football",
                                             @"image": [UIImage imageNamed:@"football"]
                                             },
@@ -63,6 +63,7 @@
     self.value = (int)self.imageSelector.value;
     
     NSNumber *number = [NSNumber numberWithInt:self.value];
+
 
     [self showPicture:number];
 

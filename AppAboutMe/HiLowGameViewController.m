@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor= [SettingsViewController userBackground];
+    self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
     [self randomNumber];
     [self refresh];
     

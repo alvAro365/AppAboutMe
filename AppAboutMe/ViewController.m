@@ -13,15 +13,28 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
 
 
 
+
 - (IBAction)unWindToMainPage:(UIStoryboardSegue *)segue {
+
+        
+    self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
     
-    self.view.backgroundColor= [SettingsViewController userBackground];
+    
+}
+
+- (IBAction)unWindBack:(UIStoryboardSegue *)segue {
+    
+    UIColor *currentBackground = self.view.backgroundColor;
+    
+    [SettingsViewController setGlobalBackground:currentBackground];
+    
     
 }
 
@@ -30,6 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
     
     
     // Do any additional setup after loading the view, typically from a nib.

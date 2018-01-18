@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor= [SettingsViewController userBackground];
+    self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
     // Do any additional setup after loading the view.
 }
 
