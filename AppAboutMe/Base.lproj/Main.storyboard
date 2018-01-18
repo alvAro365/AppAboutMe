@@ -82,14 +82,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="KxS-bO-WCG">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="KxS-bO-WCG">
                                 <rect key="frame" x="14" y="541" width="347" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="Kyn-W4-naT" eventType="valueChanged" id="5nL-Th-gPc"/>
                                 </connections>
                             </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-o9-dSP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-o9-dSP">
                                 <rect key="frame" x="16" y="231" width="343" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -358,7 +358,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="990px-Flag_of_Estonia.svg" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-fR-lRz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="estonia" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-fR-lRz">
                                 <rect key="frame" x="74" y="110" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -377,11 +377,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1024px-Flag_of_Sweden.svg" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-9A-iCn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sweden" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-9A-iCn">
                                 <rect key="frame" x="74" y="405" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flag_of_Norway.svg" translatesAutoresizingMaskIntoConstraints="NO" id="o7V-j6-Mah">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="norway" translatesAutoresizingMaskIntoConstraints="NO" id="o7V-j6-Mah">
                                 <rect key="frame" x="74" y="246" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -414,12 +414,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1024px-Flag_of_Sweden.svg" width="1024" height="640"/>
-        <image name="990px-Flag_of_Estonia.svg" width="990" height="630"/>
         <image name="Alvar" width="2000" height="2004"/>
-        <image name="Flag_of_Norway.svg" width="1024" height="745"/>
+        <image name="estonia" width="990" height="630"/>
         <image name="icons8-settings-filled-50" width="50" height="50"/>
         <image name="mobile-world" width="1280" height="720"/>
+        <image name="norway" width="1024" height="745"/>
+        <image name="sweden" width="1024" height="640"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>

@@ -14,7 +14,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *interestImage;
 @property (weak, nonatomic) IBOutlet UILabel *interestText;
 @property (nonatomic) int value;
-@property (nonatomic) UIColor* background;
+@property (nonatomic) UIColor *background;
+@property (nonatomic) NSDictionary *myInterestsData;
 
 @end
 
@@ -24,7 +25,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor= [SettingsViewController userBackground];
-    [self refresh];
+    self.myInterestsData = @{@0: @{@"title": @"Football",
+                                            @"image": [UIImage imageNamed:@"football"]
+                                            },
+                             @1: @{@"title": @"Chess",
+                                   @"image": [UIImage imageNamed:@"chess"]
+                                   },
+                             @2: @{@"title": @"Table tennis",
+                                   @"image": [UIImage imageNamed:@"bordtennis"]
+                                   },
+                             @3: @{@"title": @"Cooking",
+                                   @"image": [UIImage imageNamed:@"cooking"]
+                                   },
+                             @4: @{@"title": @"Programming",
+                                   @"image": [UIImage imageNamed:@"programming"]
+                                   },
+                             @5: @{@"title": @"Working out",
+                                   @"image": [UIImage imageNamed:@"working-out"]
+                                   },
+                             @6: @{@"title": @"Spending time with my family",
+                                   @"image": [UIImage imageNamed:@"family"]
+                                   },
+                             @7: @{@"title": @"Checkers",
+                                   @"image": [UIImage imageNamed:@"checkers"]
+                                   }
+                             };
+    
+    [self showPicture:@0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,63 +60,21 @@
 }
 - (IBAction)sliderChanged:(id)sender {
     
-    _value = (int)_imageSelector.value;
+    self.value = (int)self.imageSelector.value;
     
-    [self setImage:_value];
-    
-    
-}
+    NSNumber *number = [NSNumber numberWithInt:self.value];
 
-
-- (void)setImage:(int) imageNr {
-    
-    
-    if (imageNr < 1) {
-        _interestImage.image = [UIImage imageNamed:@"Football"];
-        _interestText.text = @"Watching football";
-    } else if(imageNr < 2) {
-        _interestImage.image = [UIImage imageNamed:@"PROGRAMMING"];
-        _interestText.text = @"Programming";
-    } else if(imageNr < 3) {
-        _interestImage.image = [UIImage imageNamed:@"Bordtennis"];
-        _interestText.text = @"Table tennis";
-    } else if(imageNr < 4) {
-        _interestImage.image = [UIImage imageNamed:@"checkers"];
-        _interestText.text = @"Checkers";
-    } else if(imageNr < 5) {
-        _interestImage.image = [UIImage imageNamed:@"Chess"];
-        _interestText.text = @"Chess";
-    } else if(imageNr < 6) {
-        _interestImage.image = [UIImage imageNamed:@"cooking"];
-        _interestText.text = @"Cooking food";
-    } else if(imageNr < 7) {
-        _interestImage.image = [UIImage imageNamed:@"hanging-out-with-family"];
-        _interestText.text = @"Spending time with my family";
-    } else if(imageNr < 8) {
-        _interestImage.image = [UIImage imageNamed:@"Working out"];
-        _interestText.text = @"Working out";
-    }
-    
-    
-}
-
-- (void)setImage {
-    
-    _interestImage.image = [UIImage imageNamed:@"Football"];
-    
-
+    [self showPicture:number];
 
 }
 
-- (void)refresh {
+
+- (void)showPicture:(NSNumber*) number {
     
-    [self setImage:_value];
+    self.interestText.text = self.myInterestsData[number][@"title"];
+    self.interestImage.image = self.myInterestsData[number][@"image"];
     
 }
-
-
-
-
 
 
 
