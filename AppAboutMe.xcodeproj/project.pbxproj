@@ -89,9 +89,9 @@
 				242AAD0A200BA57F007DEBB3 /* SettingsViewController.h */,
 				242AAD0B200BA57F007DEBB3 /* SettingsViewController.m */,
 				248FEEBF200CC7B400126867 /* HiLowGameViewController.h */,
+				248FEEC0200CC7B400126867 /* HiLowGameViewController.m */,
 				242EE599200FB18C00F61C7B /* ThisIsMeViewController.h */,
 				242EE59A200FB18C00F61C7B /* ThisIsMeViewController.m */,
-				248FEEC0200CC7B400126867 /* HiLowGameViewController.m */,
 			);
 			path = AppAboutMe;
 			sourceTree = "<group>";

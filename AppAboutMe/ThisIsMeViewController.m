@@ -11,6 +11,11 @@
 
 @interface ThisIsMeViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *swedenText;
+@property (weak, nonatomic) IBOutlet UITextView *norwayText;
+@property (weak, nonatomic) IBOutlet UITextView *estoniaText;
+
+
 @end
 
 @implementation ThisIsMeViewController
@@ -18,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor= [SettingsViewController globalBackgroundColor];
+    
+    self.swedenText.backgroundColor = [SettingsViewController globalBackgroundColor];
+    self.norwayText.backgroundColor = [SettingsViewController globalBackgroundColor];
+    self.estoniaText.backgroundColor = [SettingsViewController globalBackgroundColor];
     // Do any additional setup after loading the view.
 }
 

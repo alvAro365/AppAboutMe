@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.078298144042491913" green="0.078699864447116852" blue="0.082200475037097931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Alvar Aronija" id="5wy-Xy-fZn">
@@ -386,6 +386,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="myz-Tj-GII"/>
                     </view>
+                    <connections>
+                        <outlet property="estoniaText" destination="ACF-kp-Chs" id="Pi3-Hl-Tye"/>
+                        <outlet property="norwayText" destination="8LD-xj-1sD" id="MFx-HD-RgO"/>
+                        <outlet property="swedenText" destination="fQM-sq-4So" id="Ek2-a7-v7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwg-2O-sIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

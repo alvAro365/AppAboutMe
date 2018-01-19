@@ -15,8 +15,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *redSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *blackSwitch;
 
-
-
 @end
 
 @implementation SettingsViewController
@@ -27,21 +25,22 @@ static UIColor* defaultColor = nil;
 
     // Do any additional setup after loading the view.
     [super viewDidLoad];
+
     
-    defaultColor = [UIColor blackColor];
-    
+    // if user has not chosen a background then it will be black by default
     if(globalBackground == nil) {
         globalBackground = [UIColor blackColor];
         self.view.backgroundColor = globalBackground;
         [self.blackSwitch setOn:YES animated:YES];
     } else {
-        [self setSwitchOn:globalBackground];
         self.view.backgroundColor = globalBackground;
+        [self setSwitchOn:globalBackground];
     }
 
 
 }
 
+// Handles switch
 
 - (IBAction)switchChanged:(UISwitch*)sender {
     
@@ -58,7 +57,7 @@ static UIColor* defaultColor = nil;
 }
 
 
-
+// turns switch on after color
 -(void)setSwitchOn:(UIColor*) switchColor {
     
     if(switchColor == [UIColor blueColor]) {
@@ -71,9 +70,10 @@ static UIColor* defaultColor = nil;
         [self.blackSwitch setOn:YES animated:YES];
     }
     
-    
 }
 
+
+//sets switch off
 -(void)setSwitchOff:(UISwitch*) activeSwitch{
     
     [activeSwitch setOn:NO animated:NO];
@@ -81,6 +81,7 @@ static UIColor* defaultColor = nil;
     
 }
 
+//set global background color
 +(void)setGlobalBackground:(UIColor*) color {
     
     globalBackground = color;
@@ -93,13 +94,7 @@ static UIColor* defaultColor = nil;
     return globalBackground;
 }
 
-+(UIColor*) defaultBackgroundColor {
-    
-    return defaultColor;
-}
-
-
-
+// checks witch switch is on and sets background after the switch
 -(UIColor*) checkSwitches:(UISwitch*) selectedSwitch {
     
     if(selectedSwitch == self.greenSwitch && self.greenSwitch.on) {
@@ -112,14 +107,13 @@ static UIColor* defaultColor = nil;
         self.view.backgroundColor = globalBackground;
         
         
-    
+        
         
     } else if (selectedSwitch == self.blueSwitch && self.blueSwitch.on) {
         
         [self setSwitchOff:self.greenSwitch];
         [self setSwitchOff:self.blackSwitch];
         [self setSwitchOff:self.redSwitch];
-        
         
         
         
@@ -143,10 +137,8 @@ static UIColor* defaultColor = nil;
         self.view.backgroundColor = globalBackground;
     }
     
-    
     return globalBackground;
 }
-
 
 
 - (void)didReceiveMemoryWarning {

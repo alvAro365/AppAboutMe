@@ -12,7 +12,7 @@
 @interface SettingsViewController : UIViewController
 
 
-+(UIColor*) defaultBackgroundColor;
+
 +(UIColor*) globalBackgroundColor;
 +(void) setGlobalBackground:(UIColor*) color;
 
