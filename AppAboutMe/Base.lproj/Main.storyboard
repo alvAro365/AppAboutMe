@@ -228,7 +228,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="HFK-rd-5Sa">
-                        <barButtonItem key="leftBarButtonItem" title="Alvar Aronija" id="cMu-CL-1ho">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cMu-CL-1ho">
                             <connections>
                                 <segue destination="luF-ms-4Kl" kind="unwind" unwindAction="unWindBack:" id="r4x-37-xY7"/>
                             </connections>
