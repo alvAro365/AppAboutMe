@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UISwitch *greenSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *redSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *blackSwitch;
+@property (nonatomic) UIColor *myGreenColor;
+@property (nonatomic) UIColor *myBlueColor;
+@property (nonatomic) UIColor *myRedColor;
 
 @end
 
@@ -25,6 +28,10 @@ static UIColor* defaultColor = nil;
 
     // Do any additional setup after loading the view.
     [super viewDidLoad];
+    [self initializeColors];
+    
+    [self setSwitchOn:globalBackground];
+    
 
     
     // if user has not chosen a background then it will be black by default
@@ -60,12 +67,12 @@ static UIColor* defaultColor = nil;
 // turns switch on after color
 -(void)setSwitchOn:(UIColor*) switchColor {
     
-    if(switchColor == [UIColor blueColor]) {
-         [self.blueSwitch setOn:YES animated:YES];
-    }else if (switchColor == [UIColor redColor]) {
+    if([switchColor isEqual:self.myGreenColor]) {
+         [self.greenSwitch setOn:YES animated:YES];
+    }else if ([switchColor isEqual:self.myRedColor]) {
         [self.redSwitch setOn:YES animated:YES];
-    }else if (switchColor == [UIColor greenColor]) {
-        [self.greenSwitch setOn:YES animated:YES];
+    }else if ([switchColor isEqual:self.myBlueColor]) {
+        [self.blueSwitch setOn:YES animated:YES];
     }else if (switchColor == [UIColor blackColor]) {
         [self.blackSwitch setOn:YES animated:YES];
     }
@@ -103,7 +110,7 @@ static UIColor* defaultColor = nil;
         [self setSwitchOff:self.blackSwitch];
         [self setSwitchOff:self.redSwitch];
         
-        globalBackground = [UIColor greenColor];
+        globalBackground = self.myGreenColor;
         self.view.backgroundColor = globalBackground;
         
         
@@ -117,7 +124,7 @@ static UIColor* defaultColor = nil;
         
         
         
-        globalBackground = [UIColor blueColor];
+        globalBackground = self.myBlueColor;
         self.view.backgroundColor = globalBackground;
         
     } else if (selectedSwitch == self.redSwitch && self.redSwitch.on) {
@@ -126,7 +133,7 @@ static UIColor* defaultColor = nil;
         [self setSwitchOff:self.blackSwitch];
         [self setSwitchOff:self.greenSwitch];
         
-        globalBackground = [UIColor redColor];
+        globalBackground = self.myRedColor;
         self.view.backgroundColor = globalBackground;
     } else if (selectedSwitch == self.blackSwitch && self.blackSwitch.on) {
         
@@ -138,6 +145,16 @@ static UIColor* defaultColor = nil;
     }
     
     return globalBackground;
+}
+
+-(void)initializeColors {
+    
+    self.myGreenColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];
+    self.myBlueColor = [UIColor colorWithRed:0.0/255.0 green:122.0/255.0 blue:255.0/255.0 alpha:1];
+    
+    self.myRedColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];
+    
+    
 }
 
 

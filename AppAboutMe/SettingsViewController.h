@@ -14,6 +14,7 @@
 
 
 +(UIColor*) globalBackgroundColor;
+-(void)initializeColors;
 +(void) setGlobalBackground:(UIColor*) color;
 
 
