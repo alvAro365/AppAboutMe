@@ -36,7 +36,7 @@
 		24745194200A8CE9007BFEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24745196200A8CE9007BFEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24745197200A8CE9007BFEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2474519E200A8D44007BFEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		2474519E200A8D44007BFEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247451A0200B57B3007BFEC1 /* MyInterestsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInterestsViewController.h; sourceTree = "<group>"; };
 		247451A1200B57B3007BFEC1 /* MyInterestsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInterestsViewController.m; sourceTree = "<group>"; };
 		248FEEBF200CC7B400126867 /* HiLowGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiLowGameViewController.h; sourceTree = "<group>"; };
